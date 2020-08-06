@@ -1,0 +1,270 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+body{
+  position: fixed;
+  height: 100%;
+  width: 100%;
+}
+body > header {
+  background: gold;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #222;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+#menu {
+  background: rgba(0,0,0,.7);
+  background: linear-gradient(to top, gold, #e85a19);
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: -100%;
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  left: 0%;
+  transition: .2s;
+  z-index: 998;
+}
+#menu.active{
+  top: 0;
+}
+
+#menu ul{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+#menu a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  padding: 20px;
+  font-size: 20px;
+  width: 100%;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0,0,0,.4);
+}
+#menu a:hover {
+  background: gold;
+  transition: .3s;
+  color: #222;
+}
+
+.buttons{
+  text-align: center;
+  margin-top: 20px;
+}
+.buttons div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons button{
+  height: 40px;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  -webkit-user-select: none;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    -ms-user-select:none;
+  position: relative;
+  overflow: hidden;
+  border: 0;
+  border-radius: 5px;
+  outline: none;
+  width: 80px;
+  background: linear-gradient(-90deg, gold, #e85a19);
+  margin: 3px;
+  box-shadow: 0 0 5px rgba(0,0,0,.7);
+}
+/********..Estilos globales..********/
+button{
+  background: linear-gradient(-90deg, gold, #e85a19);
+  border: 0;
+  color: #222;
+  padding: 5px;
+  margin: auto;
+  margin-bottom: 3px;
+  border-radius: 4px;
+  outline: none;
+}
+button[disabled]{
+  filter: brightness(1);
+  opacity: 0.8;
+  color: rgba(255,255,255,.3);
+}
+button:hover{
+  background: linear-gradient(-90deg, #e85a19,gold);
+  
+}
+.bg{
+  background: linear-gradient(-90deg, gold,gold, yellow);
+  padding: 15px;
+  color: #222;
+  box-shadow: 0 0 5px rgba(0,0,0,.4) inset;
+}
+.buttons button:active i{
+  animation: ripples .8s linear;
+}
+.numberColor{
+  color: #ff7200;
+  font-weight: bold;
+}
+/********..Estilos globales..********/
+
+
+
+.buttons button > span{
+  position: absolute;
+  background: white;
+  transform: translate(-50%, -50%);
+  border-radius: 50%;
+  pointer-events: none;
+  animation: ripples 0.6s linear infinite;
+  visibility: hidden;
+}
+.buttons button > i{
+  background: white;
+  height: 0;
+  width: 0;
+  position: absolute;
+  background: rgba(255,255,255,.2);
+}
+
+@keyframes ripples {
+  0% {
+    width: 0px;
+    height: 0px;
+    opacity: 1;
+  }
+  100% {
+    width: 500px;
+    height: 500px;
+    opacity: 0.5;
+  }
+}
+.contenedor {
+  height: calc(100% - 60px);
+  overflow: auto;
+  scroll-behavior: smooth;
+}
+.btns button,.btns1 button{
+  background: gold;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border: 0;
+  border-radius: 50%;
+  font-size: 40px;
+  outline: none;
+  box-shadow: 0 0 5px rgba(0,0,0,.4);
+}
+.btns button:hover,.btns1 button:hover{
+  background: #222;
+  color: gold;
+}
+.contenedor #btnMenu {
+  background: gold;
+  height: 50px;
+  width: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: black;
+  border: 0;
+  border-radius: 50%;
+  font-size: 40px;
+  transform: rotate(-45deg);
+  transition: .2s;
+  outline: none;
+}
+.btns{
+  z-index: 1000;
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: flex;
+}
+.btns1{
+  z-index: 1000;
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  display: flex;
+}
+.contenedor #btnMenu.active{
+  transform: rotate(0deg);
+}
+.sections{
+  height: 100%;
+  transition: .3s;
+}
+.sections section {
+  height: 100%;
+  padding: 30px;
+  text-align: center;
+}
+.sections section > h1{
+  text-align: center;
+  color: #222;
+}
+.timer-main h2{
+  margin: 20px 0;
+}
+/*Eventos con el teclado*/
+.main-teclado .box{
+  background: #222;
+  height: 200px;
+  width: 100%;
+  position: relative;
+  box-shadow: 0 0 10px rgba(255,255,255,.2) inset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 23px;
+}
+.main-teclado .box span{
+  background: gold;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  position: absolute;
+}
+/********...Boton de scroll...******/
+#btnScroll{
+  margin-right: 5px;
+}
+#btnScroll.hidden{
+  opacity: 0;
+  transition: .4s;
+}
+#btnScroll span{
+  position: relative;
+  top: -5px;
+}
+/********...Boton de tema...******/
+#btnTheme{
+  font-size: 25px;
+  background: gold;
+}
+#btnTheme.dark{
+  background: #222;
+}
+.dark{
+  background: #222;
+  color: gold;
+}

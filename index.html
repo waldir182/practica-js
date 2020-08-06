@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Practica js</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=7,8,edge" />
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
+  </head>
+  <body>
+    
+    <header class="">
+      <h1>Practica DOM</h1>
+    </header>
+    
+    <div id="menu">
+      <ul class="">
+        <a href="#section1">Reloj Digitar y Alarma sonora</a>
+        <a href="#section2">Eventos del teclado</a>
+        <a href="#section3">Countdown</a>
+        <a href="#section4">Seccion 4</a>
+        <a href="#section5">Seccion 5</a>
+      </ul>
+    </div>
+    
+    <div class="contenedor" data-dark>
+      <div class="sections">
+        <section id="section1">
+          <h2>Reloj Digitar y Alarma sonora</h2>
+          
+          <div class="timer-main">
+            <br>
+            <div id="reloj"></div><br />
+            <div class="timer-btn">
+              <button id="star-reloj">Iniciar reloj</button>
+              <button id="stop-reloj">Detener reloj</button>
+              <br><button id="star-alarm">Iniciar Alarma</button>
+              <button id="stop-alarm">Detener alarma</button>
+            </div>
+            <br>
+          </div>
+          
+          
+          
+        </section>
+        <section id="section2">
+          <h2>Eventos de teclado</h2>
+          <div class="main-teclado">
+            <div class="box" id="box">
+              <span id="circle"></span>
+            </div>
+            <div class="buttons">
+              <div>
+                <button class="bt" id="top">&#11014;<i></i></button>
+              </div>
+              <div>
+                <button class="bt" id="left">&#11013;<i></i></button>
+                <button class="bt" id="bottom">&#11015; <i></i></button>
+                <button class="bt" id="right">➞<i></i></button>
+              </div>
+            </div>
+          </div>
+        </section>
+        
+        <section id="section3">
+          <h2>Countdown</h2>
+          <br>
+          <h1>Para Navidad !!</h1>
+          <br>
+          <div id="countdown" class="bg">
+            
+          </div>
+        </section>
+        <section id="section4">
+          <h1>Seccion 4</h1>
+        </section>
+        <section id="section5">
+          <h1>Seccion 5</h1>
+        </section>
+      </div>
+      
+      <div class="btns1">
+        <button id="btnTheme">️🌚</button>
+      </div>
+      
+      <div class="btns">
+        <button id="btnScroll" class="hidden"><span>&#11014;</span></button>
+        <button id="btnMenu">×</button>
+      </div>
+    </div>
+    
+    
+    <script src="js/app.js" type="module"></script>
+  </body>
+</html>
