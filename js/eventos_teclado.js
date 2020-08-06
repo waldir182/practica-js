@@ -64,6 +64,6 @@ export default function teclado(box,circle) {
       */
     });
   }
-  paraClick()
+  //paraClick()
   
 }

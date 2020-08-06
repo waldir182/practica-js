@@ -31,6 +31,8 @@ body > header {
   left: 0%;
   transition: .2s;
   z-index: 998;
+  overflow: auto;
+  padding: 0;
 }
 #menu.active{
   top: 0;
@@ -42,6 +44,7 @@ body > header {
   align-items: center;
   justify-content: center;
   width: 100%;
+  padding: 0 50px;
 }
 #menu a {
   color: white;
@@ -98,6 +101,7 @@ button{
   margin-bottom: 3px;
   border-radius: 4px;
   outline: none;
+  cursor: pointer;
 }
 button[disabled]{
   filter: brightness(1);
