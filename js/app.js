@@ -18,5 +18,5 @@ d.addEventListener("DOMContentLoaded",()=>{
   cuenta("#countdown","Dec 25,2020 00:00:00")
   scroll("btnScroll")
   tema("btnTheme")
-  adaptable()
+  adaptable("youtube","maps",`https://youtu.be/iR-MpOH_GmI`,`https://maps.app.goo.gl/jw4Q1UWpFcX9UAZu7`)
 })
