@@ -6,9 +6,11 @@ import cuenta from "./countdown.js";
 import scroll from "./scroll_top.js";
 import tema from "./theme.js";
 import adaptable from "./adaptable.js";
+import verDispositivo from "./detect_dispositivo.js";
 
 
 const d=document;
+const w=window;
 
 d.addEventListener("DOMContentLoaded",()=>{
   menu("btnMenu","menu");
@@ -19,4 +21,8 @@ d.addEventListener("DOMContentLoaded",()=>{
   scroll("btnScroll")
   tema("btnTheme")
   adaptable("youtube","maps",`https://youtu.be/iR-MpOH_GmI`,`https://maps.app.goo.gl/jw4Q1UWpFcX9UAZu7`)
+  verDispositivo("userAgent")
+  
+  alert(w.navigator.onLine)
+  
 })
