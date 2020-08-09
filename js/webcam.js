@@ -8,8 +8,8 @@ export default function webCam(id) {
   if (n.mediaDevices.getUserMedia) {
     n.mediaDevices.getUserMedia({video:true,audio:false})
     .then((stream)=>{
-      $video.srcObject=stream
-      $video.play()
+      $video.srcObject=stream;
+      $video.play();
     })
     .catch((err)=>{
       let re=d.createElement('p')
