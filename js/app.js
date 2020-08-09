@@ -7,10 +7,15 @@ import scroll from "./scroll_top.js";
 import tema from "./theme.js";
 import adaptable from "./adaptable.js";
 import verDispositivo from "./detect_dispositivo.js";
+import detectarRed from "./detectar_red.js";
+import webCam from "./webcam.js";
+import sorteo from "./sorteo.js";
 
 
 const d=document;
 const w=window;
+const n=navigator;
+
 
 d.addEventListener("DOMContentLoaded",()=>{
   menu("btnMenu","menu");
@@ -22,7 +27,9 @@ d.addEventListener("DOMContentLoaded",()=>{
   tema("btnTheme")
   adaptable("youtube","maps",`https://youtu.be/iR-MpOH_GmI`,`https://maps.app.goo.gl/jw4Q1UWpFcX9UAZu7`)
   verDispositivo("userAgent")
+  detectarRed()
+  webCam("stream")
   
-  alert(w.navigator.onLine)
   
+  sorteo('sorteoBox')
 })

@@ -272,3 +272,17 @@ button:hover{
   background: #222;
   color: gold;
 }
+/********...Deteccion de red...******/
+.online,.offline{
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: red;
+  z-index: 998;
+  color: white;
+}
+.online{
+  background: green;
+}

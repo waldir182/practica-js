@@ -16,3 +16,5 @@ async function correr() {
 //correr()
 //console.log(promesa())
 console.log(window.navigator)
+console.log(window.navigator.mediaDevices.getDisplayMedia())
+console.log(Math)
